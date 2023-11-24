@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sky-background: #7ab7f0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color:var(--sky-background);
+}
