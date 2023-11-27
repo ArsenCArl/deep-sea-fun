@@ -2,7 +2,10 @@ import React from 'react'
 
 const UnderMain = () => {
   return (
-    <div>UnderMain</div>
+    <div className='oceanBg'>
+a
+
+    </div>
   )
 }
 
