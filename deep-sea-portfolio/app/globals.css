@@ -15,48 +15,45 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-color:var(--sky-background);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.oceanBg{
+  background: linear-gradient(0deg, rgba(0,31,40,1) 0%, rgba(2,89,114,1) 51%, rgba(0,128,165,1) 100%);  
+}
+.oceanTopLayer{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url('/seaBG.png');  
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+.skyBanner{
+    background-image: url('/skyMorning.png');
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-.ocean { 
-  height: 5%;
-  width:100%;
-  position:absolute;
-  bottom:0;
-  left:0;
-  background: #015871;
-}
 
-.wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
-  position: absolute;
-  top: -198px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-}
 
-.wave:nth-of-type(2) {
-  top: -175px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
-}
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
+.generalGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.2fr 1fr 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   }
-  100% {
-    margin-left: -1600px;
-  }
-}
+  
+  .skyDiv { grid-area: 1 / 1 / 3 / 2; z-index: 1 }
+  .waveDiv { grid-area: 2 / 1 / 3 / 2; z-index: 2 }
+  .seaDiv { grid-area: 3 / 1 / 4 / 2; z-index: 2}
+  .footDiv { grid-area: 4 / 1 / 5 / 2;z-index: 3 } 
 
-@keyframes swell {
-  0%, 100% {
-    transform: translate3d(0,-25px,0);
+  .overlap{
+    position:absolute;
+    top:0;
+    left:0;
   }
-  50% {
-    transform: translate3d(0,5px,0);
-  }
-}

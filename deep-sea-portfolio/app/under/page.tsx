@@ -1,8 +1,12 @@
+import Link from 'next/link'
 import React from 'react'
 
 const UnderMain = () => {
   return (
-    <div>UnderMain</div>
+    <div className='oceanBg'>
+      <Link href='/'>Back</Link>
+
+    </div>
   )
 }
 
