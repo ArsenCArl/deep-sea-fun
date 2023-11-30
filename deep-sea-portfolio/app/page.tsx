@@ -8,17 +8,7 @@ import Wave, { WaveOptions } from "react-wavify"
 
 export default function Home() {
 
-  const waveOptions: WaveOptions = {
-    height: 30,
-    amplitude: 30,
-    speed: 0.15,
-    points: 3
-  }
-  const waveStyle: CSSProperties = {
-    display: 'block',
-    marginBottom: '-1px',
-    height: '101%'
-  }
+
 
   return (
     <MotionConfig transition={{ duration: 3 }}>
@@ -30,22 +20,12 @@ export default function Home() {
             <SkyComponent></SkyComponent>
           </div>
           <div className="waveDiv ">
-            <Wave fill="url(#gradient)"
-              paused={false}
-              style={waveStyle }
-              options={waveOptions} >
-              <defs>
-                <linearGradient id="gradient" gradientTransform="rotate(90)">
-                  <stop offset="10%" stopColor="#1eabd4" />
-                  <stop offset="90%" stopColor="rgba(0,128,165,1)" />
-                </linearGradient>
-              </defs>
-            </Wave>
+
           </div>
-          <div className="seaDiv h-full">
+          <div className="seaDiv">
             <SeaComponent></SeaComponent>
           </div>
-          <div className="footDiv h-full">
+          <div className="footDiv">
             <FooterComponent></FooterComponent>
           </div>
         </main>
