@@ -16,4 +16,5 @@ todo
 
 ## Installation on Local
 
-todo
+NPM install on the main root of the project
+npm run dev to start the project in your Local
