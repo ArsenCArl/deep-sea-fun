@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import './components/BubbleComponent/BubbleComponent.css'
 import localFont  from 'next/font/local'
 import { AnimatePresence, motion } from 'framer-motion'
 

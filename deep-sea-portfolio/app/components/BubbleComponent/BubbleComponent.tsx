@@ -1,17 +1,18 @@
-'use client'
-import React from 'react'
-import styles from './BubbleComponent.module.css'
-import Link from 'next/link'
+"use client";
+import Link from "next/link";
+import React from "react";
 
-const BubbleComponent = (props: { route: string }) => {
-
-
+const BubbleComponent = (props: { route: string; align: string }) => {
   return (
-    <div className={styles.bubbleContainer}>
-      <div className='text-sm align-bottom'>Placeholder</div>
-      <button className="btn ">Button</button>
-    </div>
-  )
-}
+    <div className="coupledBubble">
+      <div className={"bubbleContainer " + props.align}>
+        <div className="text-sm align-bottom">Placeholder</div>
+        <Link href={'/gizmos/'+ props.route} className="btn"></Link>
+      </div>
 
-export default BubbleComponent
+      <div className="decorBubble"></div>
+    </div>
+  );
+};
+
+export default BubbleComponent;

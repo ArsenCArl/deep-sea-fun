@@ -1,7 +1,6 @@
-
 import React from 'react'
-import BubbleComponent from '../BubbleComponent/BubbleComponent'
-import Wave from 'react-wavify'
+
+
 import BubbleTrailComponent from './BubbleTrailComponent'
 
 const SeaComponent = () => {

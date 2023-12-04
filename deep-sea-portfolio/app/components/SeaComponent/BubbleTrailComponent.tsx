@@ -1,21 +1,14 @@
 import React from 'react'
 import BubbleComponent from '../BubbleComponent/BubbleComponent'
+import { gizmo, gizmoList } from '@/app/tsInterfaces/gizmosData'
 
 const BubbleTrailComponent = () => {
+    const gizmosList : gizmo[] = gizmoList
     return (
         <>
-            <div className='coupledBubble'>
-                    <BubbleComponent route=''></BubbleComponent>
-                <div className='decorBubble'>
-
-                </div>
-            </div>
-            <div className='coupledBubble'>
-                    <BubbleComponent route=''></BubbleComponent>
-                <div className='decorBubble'>
-
-                </div>
-            </div>
+        {gizmosList.map((gizmo,index) => (
+          <BubbleComponent key={gizmo.id} route={gizmo.pageUrl} align={index%2 === 0 ? 'Left' : 'Right'}></BubbleComponent>
+        ))}
         </>
     )
 }
