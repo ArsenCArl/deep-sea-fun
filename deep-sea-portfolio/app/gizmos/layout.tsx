@@ -16,7 +16,7 @@ const GizmoLayout =
         </div>
       </div>
       <div className='mb-20 text-3xl'>placeholder</div>
-      <div className='bubbleEffect rounded-lg w-56 min-h-screen m-12'>
+      <div className=' rounded-lg w-56 min-w-full min-h-screen m-12'>
         {children}
       </div>
 
