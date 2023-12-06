@@ -1,21 +1,4 @@
-.bubbleContainer{
-    background: #0e6e88;
-    border-radius: 100%;
-    box-shadow:  inset 0 20px 30px rgba(255, 255, 255, 0.3);
-    width: fit-content;
-    min-height: auto;
-    padding: 2rem;
-}
-.bubbleContainer.Left{
-    align-self: start;
-    animation: sweepLeft 2s ease-in-out infinite alternate;
 
-}
-.bubbleContainer.Right{
-    align-self: end;
-    animation: sweepRight 2s ease-in-out infinite alternate;
-
-}
 
 @keyframes sweepRight { 
     0% { 
@@ -36,4 +19,48 @@
     }
 }
 
+.bubbleContainer{
+    background: #0e6e88;
+    border-radius: 100%;
+    box-shadow:  inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    min-height: auto;
+    padding: 2rem;
+}
 
+.bubbleContainer.Left{
+    align-self: start;
+    animation: sweepLeft 2s ease-in-out infinite alternate;
+
+}
+.bubbleContainer.Right{
+    align-self: end;
+    animation: sweepRight 2s ease-in-out infinite alternate;
+
+}
+
+.coupledBubble{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5vw;
+   }
+
+   .decorBubble{
+    background: #0e6e88;;
+    border-radius: 100%;
+    box-shadow:  inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    min-height: auto;
+    padding: 1rem;
+    margin: 1rem;
+   }
+
+.bubbleEffect{
+    background: #0e6e88;;
+    box-shadow:  inset 0 20px 30px rgba(255, 255, 255, 0.3);
+
+}
+.bubbleShape{
+    border-radius: 100%;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import BubbleComponent from '../BubbleComponent/BubbleComponent'
-import { gizmo, gizmoList } from '@/app/tsInterfaces/gizmosData'
+import { gizmo, gizmoList } from '@/app/utils/gizmosData'
+
 
 const BubbleTrailComponent = () => {
     const gizmosList : gizmo[] = gizmoList
