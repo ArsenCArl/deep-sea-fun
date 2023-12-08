@@ -2,12 +2,11 @@
 import Link from "next/link";
 import React from "react";
 
-const BubbleComponent = (props: { route: string; align: string }) => {
+const BubbleComponent = (props: { route: string; align: string,placeholder: string }) => {
   return (
     <div className="coupledBubble">
       <div className={"bubbleContainer " + props.align}>
-        <div className="text-sm align-bottom">Placeholder</div>
-        <Link href={'/gizmos/'+ props.route} className="btn"></Link>
+        <Link href={'/gizmos/'+ props.route} className="">{props.placeholder}</Link>
       </div>
 
       <div className="decorBubble"></div>

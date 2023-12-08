@@ -5,7 +5,7 @@ export interface gizmo{
     placeholder: string
 }
 
-export const View3d : gizmo ={
+export const view3d : gizmo ={
         id: 'View3d',
         title : '3d Viewer',
         pageUrl: '3dViewer',
@@ -13,15 +13,15 @@ export const View3d : gizmo ={
 } 
 
 
-export const second : gizmo ={
-    id: 'objectCreator',
-    title : 'Object Creator',
-    pageUrl: 'tsObjectFormat',
-    placeholder: 'transformer'
+export const speechToText : gizmo ={
+    id: 'speechToText',
+    title : 'Speech To Text',
+    pageUrl: 'speechToText',
+    placeholder: 'Speech To Text'
 } 
 export const  gizmoList : gizmo[]=
 
-    [View3d,second
+    [view3d,speechToText
 
     ]
 

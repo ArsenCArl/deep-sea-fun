@@ -19,6 +19,15 @@
     }
 }
 
+.Left{
+    align-self: start;
+    animation: sweepLeft 2s ease-in-out infinite alternate;
+}
+.Right{
+    align-self: end;
+    animation: sweepRight 2s ease-in-out infinite alternate;
+}
+
 .bubbleContainer{
     background: #0e6e88;
     border-radius: 100%;
@@ -28,16 +37,6 @@
     padding: 2rem;
 }
 
-.bubbleContainer.Left{
-    align-self: start;
-    animation: sweepLeft 2s ease-in-out infinite alternate;
-
-}
-.bubbleContainer.Right{
-    align-self: end;
-    animation: sweepRight 2s ease-in-out infinite alternate;
-
-}
 
 .coupledBubble{
     display: flex;
@@ -63,4 +62,11 @@
 }
 .bubbleShape{
     border-radius: 100%;
+}
+
+
+.bubbleLabsBG{
+    background-image: url('/BubbleLabsBG.png');  
+    background-repeat: no-repeat;
+    background-size: cover;
 }
