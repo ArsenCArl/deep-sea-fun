@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import './components/BubbleComponent/BubbleComponent.css'
 import localFont  from 'next/font/local'
 
 const myFont = localFont({

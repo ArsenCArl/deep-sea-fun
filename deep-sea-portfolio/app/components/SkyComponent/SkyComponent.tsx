@@ -1,16 +1,19 @@
 import React, { CSSProperties } from 'react'
-import Styles from './SkyComponent.module.css'
-import Image from 'next/image'
+import './SkyComponent.css'
 import Wave, { WaveOptions } from "react-wavify"
 const SkyComponent = () => {
-  
-  const waveOptions: WaveOptions = {
+
+
+  //The main wavify interface was not public but i made it so! 
+  //this is so i can extract the prop into a const
+  //If this was to give any amount of trouble another solution may be just creating our own interface of wave options
+  const waveOptions: WaveOptions = { 
     height: 30,
     amplitude: 30,
     speed: 0.15,
     points: 3
   }
-  const waveStyle: CSSProperties = {
+  const waveStyle: CSSProperties = { //Props extracted to make tsx easier to read
     display: 'block',
     position: 'absolute',
     marginBottom: '-1px',
