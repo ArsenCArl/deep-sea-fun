@@ -19,6 +19,58 @@
     }
 }
 
+
+@keyframes disapear{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+@keyframes appear{
+    0%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.bubbleParent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .bubbleSibling { grid-area: 1 / 1 / 2 / 2; z-index: 1; }
+    .bubbleSiblingTop { grid-area: 1 / 1 / 2 / 2; z-index: 0}
+
+
+
+.mainMenu{
+    opacity: 1;
+    transition : opacity 300ms ease-in-out
+}
+
+.mainMenu:hover{
+    opacity: 0.1;
+
+}
+.mainMenu:hover +.hiddenTitle{
+    animation: appear 200ms  ease-in forwards ;
+
+}
+
+.hiddenTitle{
+    opacity: 0;
+
+}
+
+
 .Left{
     align-self: start;
     animation: sweepLeft 2s ease-in-out infinite alternate;
@@ -34,7 +86,7 @@
     box-shadow:  inset 0 20px 30px rgba(255, 255, 255, 0.3);
     width: fit-content;
     min-height: auto;
-    padding: 2rem;
+    padding: 5rem;
 }
 
 

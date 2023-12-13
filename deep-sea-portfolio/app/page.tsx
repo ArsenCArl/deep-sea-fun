@@ -3,6 +3,7 @@ import {MotionConfig, motion } from "framer-motion"
 import SkyComponent from "./components/SkyComponent/SkyComponent"
 import SeaComponent from "./components/SeaComponent/SeaComponent"
 import FooterComponent from "./components/FooterComponent/FooterComponent"
+import 'regenerator-runtime/runtime'
 
 
 

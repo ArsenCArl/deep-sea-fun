@@ -9,7 +9,13 @@ const SeaComponent = () => {
   return (
     <div className="relative seaGrid">
       <div className="topSea"></div>
-      <div className="middleSea selectSea min-h-screen flex flex-col items-center">
+      <div className="middleSea selectSea min-h-screen flex flex-row">
+        <div className="aboutMe">
+          <div className="text-7xl text-center mb-5 ">Hello there!</div>
+          <div className="text-2xl text-center">
+          Hey, I'm Arsenio, a Full Stack Engineer passionate about crafting seamless user experiences.
+          </div>
+        </div>
         <BubbleTrailComponent></BubbleTrailComponent>
       </div>
       <div className="seaBed min-h-screen">

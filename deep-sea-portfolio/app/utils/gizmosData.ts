@@ -3,20 +3,23 @@ export interface gizmo{
     id : string,
     title : string,
     pageUrl: string
-    placeholder: string
+    placeholder: string,
+    imgUrl : string
 }
 // Start of the actual showcase data objects
 export const view3d : gizmo ={
         id: 'View3d',
         title : '3d Viewer',
         pageUrl: '3dViewer',
-        placeholder: '3D'
+        placeholder: '3D Viewer',
+        imgUrl : '/Cube.png'
 } 
 export const speechToText : gizmo ={
     id: 'speechToText',
     title : 'Speech To Text',
     pageUrl: 'speechToText',
-    placeholder: 'S2T'
+    placeholder: 'Speech to Text',
+    imgUrl : '/speak.png'
 } 
 // Finish
 
