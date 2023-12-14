@@ -39,27 +39,7 @@ const page = () => {
 
   return (
     <div className="treasureChestBg flex flex-col items-center justify-center stre">
-      <div className="cardContainer">
-        <Slider {...settings}>
-          {cardsData.map((card) => (
-            <CardComponent
-              key={card.title}
-              title={card.title}
-              subtitle={card.subtitle}
-              description={card.description}
-              techs={card.techs}
-            ></CardComponent>
-          ))}
-        </Slider>
-      </div>
-      <div className="self-end mt-24">
-        <Link href="/">
-          <div className="text-3xl hover:text-4xl text-amber-300 text-center mr-12">
-            Back
-          </div>
-        </Link>
-      </div>
-      <div className="carousel w-full"></div>
+
     </div>
   );
 };

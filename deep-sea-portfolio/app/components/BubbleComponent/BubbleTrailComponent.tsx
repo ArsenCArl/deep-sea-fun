@@ -16,7 +16,7 @@ const BubbleTrailComponent = () => {
   const treasureChest: string = "/projectShowcase";
 
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col max-w-full ">
       {gizmosList.map((gizmo, index) => (
         <BubbleComponent
           key={gizmo.id}

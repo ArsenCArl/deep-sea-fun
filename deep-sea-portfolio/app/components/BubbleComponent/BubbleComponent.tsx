@@ -13,14 +13,13 @@ const BubbleComponent = (props: {
   imgUrl: string;
 }) => {
   return (
-    <div className="coupledBubble">
+    <div className="coupledBubble flex flex-col">
       <div className={"bubbleContainer " + props.align}>
-        <Link href={"/bubbles/" + props.route} className="bubbleParent">
+        <Link href={"/bubbles/" + props.route} className="bubbleParent relative text-justify">
           <Image
             className="mainMenu bubbleSibling"
             src={props.imgUrl}
-            width={500}
-            height={500}
+      fill={true}
             alt={props.placeholder}
           ></Image>
           <div className="bubbleSiblingTop hiddenTitle text-center text-3xl text-black">
