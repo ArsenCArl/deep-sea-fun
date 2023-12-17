@@ -1,14 +1,24 @@
 
-
-.treasureChestBg{
-    background-image: url('/chestBg.png');  
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-  }
+.projectSideBg{
+  background-image: url('/projectSideBg.png');  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
   .cardContainer{
     width: 30rem;
     height: 70vh;
   }
+  .bubbleEffect{
+    background: #ebd703ab;;
+    box-shadow:  inset 0 20px 30px rgba(0, 0, 0, 0.818);
+
+}
+.bubbleShape{
+    border-radius: 20%;
+    padding: 5rem;
+}
+.hideScrollbar{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

@@ -2,3 +2,9 @@
     inline-size : 15rem
    }
 
+
+   .bubbleLabsBG{
+    background-image: url('/BubbleLabsBG.png');  
+    background-repeat: no-repeat;
+    background-size: cover;
+}

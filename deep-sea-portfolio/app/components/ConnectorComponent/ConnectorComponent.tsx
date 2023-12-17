@@ -8,7 +8,7 @@ interface props {
 }
 const ConnectorComponent = (prop: props) => {
   return (
-    <div className="w-48 h-56">
+    <div className="w-48 h-64">
       <div className="">{prop.message}</div>
         <div className="relative w-full h-2/3">
         <a  href={prop.hrefUrl} target="_blank">

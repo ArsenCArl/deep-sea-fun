@@ -19,13 +19,13 @@ const SeaComponent = () => {
           <div className="text-xl lg:text-2xl text-center">
             <p>
               On the bubble menu you can check some of my experiments with
-              NextJS
+              <b className="text-cyan-400"> NextJS</b>
               <br />
               Check the treasure chest to see my latest my professional projects
               <br />
             </p>
             <p className="mt-10">
-              This project is entirely uploaded and documented in <a className="text-purple-400" target="_blank" href="https://github.com/ArsenCArl/deep-sea-fun">Github</a>,
+              This project is entirely uploaded and documented in <a className="text-purple-400 hover:text-purple-200" target="_blank" href="https://github.com/ArsenCArl/deep-sea-fun">Github</a>,
               <br />
               All graphics in this page were designed by <b className="text-sky-100">me</b>
               <br />

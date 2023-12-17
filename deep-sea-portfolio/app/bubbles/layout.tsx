@@ -18,7 +18,7 @@ const GizmoLayout = ({ children }: { children: React.ReactNode }) => {
 
           </div>
           <div className="text-center text flex items-center p-6 mr-2">
-              <Link href="/" className="text-slate-950 hover:text-teal-800 hover:text-2xl text-xl">
+              <Link href="/" className="text-slate-950 hover:text-slate-800 hover:text-4xl text-2xl">
                 Back to the sea
               </Link>
             </div>

@@ -1,29 +1,18 @@
 import React from "react";
 import  './cardComponent.css'
+import { cardProps } from "@/app/utils/projectData";
 
 
-export interface cardProps {
-title : string,
-subtitle : string,
-description : string,
-techs : string[]
-}
+
 
 const CardComponent = (props : cardProps) => {
   return (
-<div className="card w-96 bg-base-100 shadow-xl">
-  <figure className="bg-amber-400">           {props.title}
-</figure>
-  <div className="card-body">
-    <h2 className="card-title">
-    {props.subtitle}
-    </h2>
-    <p>{props.description}</p>
-    <div className="card-actions justify-end">
-    {props.techs.map((tech) => (
-      <div className="badge badge-outline"> {tech}</div> 
-          ))}
-    </div>
+<div className="card w-96 bg-base-100 shadow-xl image-full ml-5 mr-5 mb-5">
+  <figure><img src={'/projectImg/' + props.imgUrl} alt=""  /></figure>
+  <div className="card-body ">
+    <h2 className="card-title">{props.title}</h2>
+    <p className="font-bold">{props.subtitle}</p>
+    <p className="font-bold">{props.description}</p>
   </div>
 </div>
   );
