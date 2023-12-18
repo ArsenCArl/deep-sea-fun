@@ -12,14 +12,14 @@ export const view3d : gizmo ={
         title : '3d Viewer',
         pageUrl: '3dViewer',
         placeholder: '3D Viewer',
-        imgUrl : '/Cube.png'
+        imgUrl : '/assets/Cube.png'
 } 
 export const speechToText : gizmo ={
     id: 'speechToText',
     title : 'Speech To Text',
     pageUrl: 'speechToText',
     placeholder: 'Speech to Text',
-    imgUrl : '/speak.png'
+    imgUrl : '/assets/speak.png'
 } 
 // Finish
 
