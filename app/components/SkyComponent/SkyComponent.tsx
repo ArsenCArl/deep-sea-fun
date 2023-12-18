@@ -1,19 +1,12 @@
 import React, { CSSProperties } from 'react'
 import './SkyComponent.css'
-import Wave, { WaveOptions } from "react-wavify"
+import Wave from "react-wavify"
 const SkyComponent = () => {
-
 
   //The main wavify interface was not public but i made it so! 
   //this is so i can extract the prop into a const
   //If this was to give any amount of trouble another solution may be just creating our own interface of wave options
-  const waveOptions: WaveOptions = { 
-    height: 30,
-    amplitude: 30,
-    speed: 0.15,
-    points: 3
-  }
-  const waveStyle: CSSProperties = { //Props extracted to make tsx easier to read
+  const waveStyle: CSSProperties = { 
     display: 'block',
     position: 'absolute',
     marginBottom: '-1px',
@@ -32,7 +25,12 @@ const SkyComponent = () => {
     <Wave fill="url(#gradient)"
               paused={false}
               style={waveStyle }
-              options={waveOptions} >
+              options={{ 
+                height: 30,
+                amplitude: 30,
+                speed: 0.15,
+                points: 3
+              }} >
               <defs>
                 <linearGradient id="gradient" gradientTransform="rotate(90)">
                   <stop offset="10%" stopColor="#1eabd4" />
