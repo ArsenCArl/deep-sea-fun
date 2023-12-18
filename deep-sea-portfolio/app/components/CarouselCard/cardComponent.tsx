@@ -8,7 +8,7 @@ import { cardProps } from "@/app/utils/projectData";
 const CardComponent = (props : cardProps) => {
   return (
 <div className="card w-96 bg-base-100 shadow-xl image-full ml-5 mr-5 mb-5">
-  <figure><img src={'/projectImg/' + props.imgUrl} alt=""  /></figure>
+  <figure><img src={'/assets/projectImg/' + props.imgUrl} alt=""  /></figure>
   <div className="card-body ">
     <h2 className="card-title">{props.title}</h2>
     <p className="font-bold">{props.subtitle}</p>

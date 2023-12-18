@@ -24,7 +24,7 @@ const page = () => {
         </div>
         <div className=" w-56 min-w-max min-h-min m-12 scroll-smooth overflow-y-scroll hideScrollbar">
 
-          <div className="grid grid-cols-2">
+          <div className="grid lg:grid-cols-2 grid-cols-1">
           {cardsData.map((project) => (
           <CardComponent
             key={project.title}

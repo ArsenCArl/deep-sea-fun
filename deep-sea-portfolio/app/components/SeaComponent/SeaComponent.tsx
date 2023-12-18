@@ -47,7 +47,7 @@ const SeaComponent = () => {
           <BubbleTrailComponent></BubbleTrailComponent>
         </div>
       </div>
-      <div className="seaBed min-h-screen">
+      <div className="seaBed">
         <div className="bedBg"></div>
       </div>
     </div>

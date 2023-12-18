@@ -26,15 +26,15 @@ const BubbleTrailComponent = () => {
           placeholder={gizmo.placeholder}
         ></BubbleComponent>
       ))}
-      <Link href={treasureChest}>
+      <Link href={treasureChest} className="bubbleParent relative text-justify Left ">
         <Image
-          className="Left mainMenu"
+          className="mainMenu bubbleSibling place-self-center"
           src={imgUrl}
           width={200}
           height={200}
           alt="treasure chest that leads to project section"
         ></Image>
-        <div className="hiddenTitle text-center text-amber-400 text-3xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+        <div className="bubbleSiblingTop hiddenTitle text-center text-3xl text-black self-center">
           {" "}
           Projects
         </div>

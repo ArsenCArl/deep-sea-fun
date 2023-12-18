@@ -18,6 +18,8 @@ const page = () => {
     "I am a 3d Rendered Object using Three.Js",
     "I can be rotated using the controls",
     "I can also be animated!",
+    'My model was done by carlin.chu on Sketchfab!',
+    'Three.Js can help making more dynamic pages, using 3d Technology'
   ];
 
 

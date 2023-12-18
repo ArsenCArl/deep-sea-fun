@@ -4,7 +4,7 @@
 
 
    .bubbleLabsBG{
-    background-image: url('/BubbleLabsBG.png');  
+    background-image: url('/assets/BubbleLabsBG.png');  
     background-repeat: no-repeat;
     background-size: cover;
 }
