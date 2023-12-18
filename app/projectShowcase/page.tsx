@@ -8,7 +8,7 @@ import Link from "next/link";
 import { projectsData } from "../utils/projectData";
 import CardComponent from "../components/CarouselCard/cardComponent";
 
-const page = () => {
+const ProjectShowcase = () => {
   const [cardsData, setCardData] = useState(projectsData);
 
   return (
@@ -43,4 +43,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProjectShowcase;

@@ -5,7 +5,7 @@ import MeshComponent from "./meshComponent";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { ArrowUturnUpIcon } from "@heroicons/react/20/solid";
 
-const page = () => {
+const Viewer3d = () => {
   const [counter, setCounter] = useState(0);
   const [rotateLeftSignal, setRotateLeft] = useState(false);
   const [rotateRightSignal, setRotateRight] = useState(false);
@@ -92,4 +92,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Viewer3d;

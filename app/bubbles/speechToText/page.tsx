@@ -2,7 +2,7 @@
 import React from 'react'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
-const page = () => {
+const SpeechToText = () => {
   const {
     transcript,
     listening,
@@ -31,4 +31,4 @@ const page = () => {
   );
 }
 
-export default page
+export default SpeechToText
