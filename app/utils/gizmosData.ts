@@ -1,6 +1,6 @@
 //Interfaces for the bubbles or gizmos
 export interface gizmo{
-    id : string,
+    id? : string,
     title : string,
     pageUrl: string
     placeholder: string,
@@ -26,7 +26,7 @@ export const speechToText : gizmo ={
 // A list of the showcases, this would be what the database would give us if there was one
 export const  gizmoList : gizmo[]=
 
-    [view3d,speechToText
+    [view3d,
 
     ]
 
