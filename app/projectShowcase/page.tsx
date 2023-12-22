@@ -1,9 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import "./projectShowcase.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import { projectsData } from "../utils/projectData";
 import CardComponent from "../components/CarouselCard/cardComponent";
