@@ -12,7 +12,7 @@ const BubbleTrailComponent = () => {
   // As of right now there is really no need for a databsase on this app so this data fetch is atended internally
   // it points to an utils file with a list of the different projects
   // this const could easily be conected to a database in the future and as long as we pased the same type of object the app would work perfectly
-  const imgUrl: string = "/chest.png";
+  const imgUrl: string = "/assets/chest.png";
   const treasureChest: string = "/projectShowcase";
 
   return (
