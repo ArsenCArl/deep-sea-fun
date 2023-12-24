@@ -15,10 +15,10 @@ const SkyComponent = () => {
 
   return (
     <div className="skyBanner min-h-screen relative">
-    <div className='sm:text-8xl text-4xl text-center'>
+    <div className='sm:text-8xl text-7xl text-center'>
       Arsenio Techs
     </div>
-    <div className='sm:text-5xl text-2xl text-center'>
+    <div className='sm:text-5xl text-3xl text-center'>
       a React Project
     </div>
     <div>

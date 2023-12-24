@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sky-background: #7ab7f0;
-  }
-}
+
 
 .oceanBg {
   background: linear-gradient(

@@ -20,7 +20,7 @@ export default function Home() {
 
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
 
-        <main className="generalGrid  bg-sky-200">
+        <main className="generalGrid  bg-sky-200 text-black overflow-x-hidden">
           <div className="skyDiv h-full">
             <SkyComponent></SkyComponent> 
           </div>

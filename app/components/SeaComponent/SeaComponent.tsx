@@ -10,8 +10,8 @@ const SeaComponent = () => {
   return (
     <div className="relative seaGrid">
       <div className="topSea"></div>
-      <div className="middleSea selectSea min-h-screen flex flex-col lg:flex-row">
-        <div className="aboutMe ml-5 ">
+      <div className="middleSea selectSea min-h-screen flex flex-col lg:flex-row ">
+        <div className="aboutMe">
           <div className="text-4xl lg:text-5xl text-center mb-5 ">
             Hello there! I am <b className="text-sky-100">Arsenio</b>
             <br /> a Full Stack developer!
