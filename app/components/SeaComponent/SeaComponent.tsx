@@ -11,7 +11,7 @@ const SeaComponent = () => {
     <div className="relative seaGrid">
       <div className="topSea"></div>
       <div className="middleSea selectSea min-h-screen flex flex-col lg:flex-row ">
-        <div className="aboutMe">
+        <div className="aboutMe m-auto">
           <div className="text-4xl lg:text-5xl text-center mb-5 ">
             Hello there! I am <b className="text-sky-100">Arsenio</b>
             <br /> a Full Stack developer!
@@ -21,7 +21,7 @@ const SeaComponent = () => {
               On the bubble menu you can check some of my experiments with
               <b className="text-cyan-400"> NextJS</b>
               <br />
-              Check the treasure chest to see my latest my professional projects
+              Check the treasure chest to see my latest professional projects
               <br />
             </p>
             <p className="mt-10">
